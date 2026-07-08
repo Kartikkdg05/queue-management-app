@@ -1,43 +1,40 @@
-# 🚀 Queue Management Application
+# Queue Management Application
 
-A modern **Queue Management Application** built using **React** and **Vite**. It allows users to add customers to a queue, manage their service status, and remove customers with a clean, responsive user interface.
+A modern Queue Management Application built with **React** and **Vite** that allows users to manage customer queues efficiently.
 
----
+## Features
 
-## 📸 Preview
-
-![Queue Management Application](https://via.placeholder.com/900x450.png?text=Queue+Management+Application)
-
-> You can replace the above image with an actual screenshot of your application.
-
----
-
-## ✨ Features
-
-- ➕ Add customers to the queue
-- 📝 Select a service type
-- 📋 Display all queued customers
-- 🔄 Update customer status:
+- Add customers to the queue
+- Select a service for each customer
+- Update customer status:
   - Waiting
   - Serving
   - Completed
-- ❌ Remove customers from the queue
-- 🎨 Responsive dark-themed UI
-- ⚡ Fast performance with React + Vite
+- Remove customers from the queue
+- Responsive and modern UI
+- Real-time state updates using React
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - React
 - JavaScript (ES6+)
 - Vite
 - CSS3
-- HTML5
 
----
+## React Concepts Used
 
-## 📂 Project Structure
+- useState
+- Props
+- Callback Functions
+- Controlled Components
+- Event Handling
+- Conditional Rendering
+- List Rendering (`map`)
+- State Management
+- Spread Operator
+- Functional State Updates
+
+## Project Structure
 
 ```text
 src/
@@ -51,173 +48,49 @@ src/
 └── main.jsx
 ```
 
----
+## Installation
 
-## ⚛️ React Concepts Used
-
-- Functional Components
-- useState Hook
-- Props
-- Callback Functions
-- Controlled Components
-- Event Handling
-- Conditional Rendering
-- List Rendering using `map()`
-- Unique Keys
-- Spread Operator
-- State Management
-- Immutable State Updates
-
----
-
-## 🔄 Application Flow
-
-```text
-User fills the form
-        │
-        ▼
-QueueForm
-        │
-        ▼
-onAdd(customer)
-        │
-        ▼
-App.jsx
-        │
-        ▼
-setQueue()
-        │
-        ▼
-Queue State Updated
-        │
-        ▼
-QueueDisplay
-        │
-        ▼
-Customer Appears
-```
-
----
-
-## 📌 Customer Status Flow
-
-```text
-Waiting
-   │
-   ▼
-Serving
-   │
-   ▼
-Completed
-```
-
----
-
-## 📦 Installation
-
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/Kartikkdg05/queue-management-app.git
 ```
 
-Go to the project directory
+Go to the project folder:
 
 ```bash
 cd queue-management-app
 ```
 
-Install dependencies
+If your Vite project is inside a subfolder:
+
+```bash
+cd Queue_Management
+```
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Run the development server
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit
+Open the application in your browser:
 
 ```text
 http://localhost:5173
 ```
 
----
+## Screenshots
 
-## 🧠 Key React Logic
+_Add screenshots of the application here._
 
-### Add Customer
-
-```javascript
-setQueue((prevQueue) => [
-  ...prevQueue,
-  {
-    ...customer,
-    id: Date.now(),
-    status: "waiting",
-  },
-]);
-```
-
-### Update Customer Status
-
-```javascript
-setQueue((prevQueue) =>
-  prevQueue.map((customer) =>
-    customer.id === id
-      ? { ...customer, status: newStatus }
-      : customer
-  )
-);
-```
-
-### Remove Customer
-
-```javascript
-setQueue((prevQueue) =>
-  prevQueue.filter((customer) => customer.id !== id)
-);
-```
-
----
-
-## 📸 Screenshots
-
-You can add screenshots here.
-
-Example:
-
-```text
-screenshots/
-├── home.png
-├── add-customer.png
-└── serving.png
-```
-
-Then use:
-
-```markdown
-![Home](screenshots/home.png)
-```
-
----
-
-## 🎯 Future Improvements
-
-- Search customers
-- Queue statistics dashboard
-- Authentication
-- Database integration
-- Backend using Node.js & Express
-- Persistent storage with MongoDB
-- Drag-and-drop queue ordering
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Kartik Deep Gautam**
 
@@ -226,10 +99,4 @@ Then use:
 
 ---
 
-## 📄 License
-
-This project is developed for learning and educational purposes.
-
----
-
-⭐ If you found this project useful, consider giving it a star on GitHub.
+⭐ If you found this project useful, consider giving it a star.
