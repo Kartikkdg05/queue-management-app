@@ -88,7 +88,7 @@ http://localhost:5173
 
 ## Screenshots
 
-_Add screenshots of the application here._
+![Queue Management Application](Queue_Management/screenshots/home.png)
 
 ## Author
 
